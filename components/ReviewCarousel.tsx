@@ -12,22 +12,24 @@ interface SliderProps {
   slides: ReactNode[];
 }
 
-const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
+const ReviewCarousel: React.FC<SliderProps> = ({
+  slides,
+}) => {
   return (
     <>
       <Swiper
         centeredSlides={true}
-        initialSlide={3}
+        initialSlide={2}
         loop={true}
         modules={[Autoplay]}
         autoplay={{
-          delay: 1000,
+          delay: 2500,
           disableOnInteraction: false,
         }}
         breakpoints={{
           360: {
             spaceBetween: 10,
-            slidesPerView: 1.5,
+            slidesPerView: 2,
           },
           640: {
             slidesPerView: 2.5,
@@ -42,12 +44,18 @@ const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
             spaceBetween: 10,
           },
           1280: {
-            slidesPerView: 4.5,
+            slidesPerView: 3.5,
+            spaceBetween: 10,
+          },
+          1440: {
+            initialSlide: 3,
+            slidesPerView: 4,
             spaceBetween: 10,
           },
           1920: {
-            slidesPerView: 5.5,
-            spaceBetween: 10,
+            initialSlide: 4,
+            slidesPerView: 6.5,
+            spaceBetween: 30,
           },
         }}
       >
