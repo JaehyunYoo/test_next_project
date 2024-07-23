@@ -49,7 +49,7 @@ const Reviews = () => {
       alt="Review Crown Icon Signaling App"
     />,
     <Image
-      key={6}
+      key={7}
       src="/images/review06.svg"
       width={320}
       height={211}
@@ -57,7 +57,7 @@ const Reviews = () => {
     />,
   ];
   return (
-    <section className="mt-[80px] w-full">
+    <section className="mobile:mt-[160px] w-full">
       <div className="w-full flex-col flex items-center justify-center">
         <Image
           src="/images/crown_img_2x.png"
@@ -80,19 +80,7 @@ const Reviews = () => {
           alt="Review Crown Icon Signaling App"
         />
         <div className="flex mobile:mt-[20px]">
-          <StoreTitle
-            title="App Store"
-            icon="/icons/apple_store.svg"
-            alt="Signaling Apple Store"
-          />
-          <StoreTitle
-            title="Play Store"
-            icon="/icons/play_store.svg"
-            alt="Signaling Google Play Store"
-          />
-          <span className="text-black opacity-50 text-sm font-semibold ">
-            1000+ reviews
-          </span>
+          <StoreTitle />
         </div>
 
         <div className="w-full my-4 max-h-[231px]">

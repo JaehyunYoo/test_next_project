@@ -7,15 +7,16 @@ interface SectionContentProps {
   height: number;
   alt: string;
   style: string;
+  imageStyle: string;
   children: ReactNode;
 }
 
 const SectionContents: React.FC<SectionContentProps> = (props) => {
-  const { path, width, height, alt, style } = props;
+  const { path, width, height, alt, imageStyle, style } = props;
   return (
-    <section className="font-spoqaHangSans flex mobile:flex-col my-[12px] sm:justify-center sm:items-center">
+    <section className={style}>
       <Image
-        className={`${style}`}
+        className={imageStyle}
         src={path}
         width={width}
         height={height}

@@ -28,11 +28,11 @@ const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
             slidesPerView: 1.5,
           },
           640: {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2.5,
             spaceBetween: 10,
           },
           1024: {

@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         mobile: "360px",
+        notebook: "1440px",
       },
       fontFamily: {
         spoqaHangSans: ["var(--font-spoqaHangSans)"],

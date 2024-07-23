@@ -5,37 +5,25 @@ import Image from "next/image";
 
 const MainContentView = () => {
   return (
-    <div className="font-spoqaHangSans flex flex-col items-center justify-center xl:mr-[40px]">
-      <div className="mb-[32px]">
+    <div className="md: font-spoqaHangSans flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <Image
-          className="mb-[4px]"
-          src="/icons/color_set.png"
-          width={173}
-          height={17}
+          className="mb-[4px] mobile:max-w-[140px]"
+          src="/icons/title_dot.svg"
+          width={262}
+          height={15}
           alt="Picture of the author"
         />
-        <h1 className="text-center text-zinc-800 text-2xl font-bold">
+        <h1 className="text-center text-zinc-800 mobile:text-2xl font-bold">
           커플 일정 관리
         </h1>
-        <h2 className="text-center text-zinc-800 text-[28px] font-bold">
+        <h2 className="text-center text-zinc-800 mobile:text-[28px] font-bold">
           <span className="text-orange-500  font-bold">시그널링</span>
           으로
         </h2>
       </div>
-      <div className="font-spoqaHangSans flex mb-[8px]">
-        <StoreTitle
-          title="App Store"
-          icon="/icons/apple_store.svg"
-          alt="Signaling Apple Store"
-        />
-        <StoreTitle
-          title="Play Store"
-          icon="/icons/play_store.svg"
-          alt="Signaling Google Play Store"
-        />
-        <span className="font-spoqaHangSans text-black/opacity-50 text-[13px] font-medium">
-          1000+ reviews
-        </span>
+      <div className="my-[12px]">
+        <StoreTitle />
       </div>
       <div className="font-spoqaHangSans flex">
         <StoreButton title="App Store" icon="/icons/apple_store_btn.svg" />
