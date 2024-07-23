@@ -17,11 +17,10 @@ const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
       <Swiper
         centeredSlides={true}
         initialSlide={3}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         breakpoints={{
           360: {
             spaceBetween: 10,
@@ -36,7 +35,11 @@ const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
             spaceBetween: 10,
           },
           1024: {
-            slidesPerView: 6,
+            slidesPerView: 3.5,
+            spaceBetween: 10,
+          },
+          1280: {
+            slidesPerView: 4.5,
             spaceBetween: 10,
           },
           1920: {

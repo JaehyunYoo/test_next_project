@@ -22,10 +22,12 @@ export default function Home() {
         <div className="mobile:mt-[210px]" />
         <SectionContents
           path={"/images/calendar_section.svg"}
-          width={624}
+          width={600}
           height={504}
-          style="font-spoqaHangSans flex mobile:flex-col md:flex-row mobile:justify-center mobile:items-center"
-          imageStyle={"mobile:w-[323px] mobile:mr-[50px] "}
+          style="font-spoqaHangSans flex mobile:flex-col md:flex-row mobile:justify-center items-center"
+          imageStyle={
+            "md:w-[504px] md:h-[504px] mobile:h-[260px] mobile:mr-[48px]"
+          }
           alt={""}
         >
           <div>
@@ -58,10 +60,10 @@ export default function Home() {
           width={668}
           height={504}
           style="font-spoqaHangSan flex mobile:flex-col md:flex-row-reverse mobile:justify-center  mobile:items-center"
-          imageStyle={"mobile:w-[350px]  py-[12px] md:ml-[48px]"}
+          imageStyle={"md:w-[504px] md:h-[504px] mobile:h-[260px]"}
           alt={""}
         >
-          <div>
+          <div className="md:pr-[48px]">
             <div className="mt-[32px] flex md:justify-start  justify-center items-center">
               <span>
                 <Image
@@ -90,7 +92,9 @@ export default function Home() {
           width={500}
           height={500}
           style="font-spoqaHangSan flex mobile:flex-col md:flex-row mobile:justify-center mobile:items-center"
-          imageStyle={"mobile:w-[340px] py-[12px] md:mr-[48px]"}
+          imageStyle={
+            "mobile:h-[276px] py-[12px] md:w-[500px] md:h-[500px] md:mr-[48px]"
+          }
           alt={""}
         >
           <div>
@@ -124,7 +128,7 @@ export default function Home() {
           width={612}
           height={504}
           style="font-spoqaHangSan flex md:flex-row-reverse mobile:flex-col mobile:justify-center mobile:items-center"
-          imageStyle={"mobile:w-[350px] py-[12px]"}
+          imageStyle={"mobile:w-[350px] md:w-[612px] md:h-[504px] py-[12px]"}
           alt={""}
         >
           <div>
