@@ -9,12 +9,20 @@ interface SectionContentProps {
   style: string;
   imageStyle: string;
   children: ReactNode;
+  animation?: string;
 }
 
 const SectionContents: React.FC<SectionContentProps> = (props) => {
-  const { path, width, height, alt, imageStyle, style } = props;
+  const { path, width, height, alt, imageStyle, style, animation } = props;
   return (
-    <section className={style}>
+    <section
+      className={style}
+      data-aos={`${animation ?? "fade-up"}`}
+      data-aos-easing="ease-out"
+      data-aos-duration="800"
+      data-aos-once="true"
+      data-aos-delay="500"
+    >
       <Image
         className={imageStyle}
         src={path}

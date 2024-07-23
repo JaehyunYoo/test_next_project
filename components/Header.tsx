@@ -9,7 +9,7 @@ interface MenuProps {
 const Header: React.FC<MenuProps> = ({ isActive, onToggle }) => {
   return (
     <nav className="absoulte w-full bg-white overflow-x-hidden">
-      <div className="2xl:max-w-[1360px] 2xl:h-[60px] 2xl:mx-auto  mobile:px-4 mobile:py-4 mobile:h-[38px] flex justify-between items-center">
+      <div className="2xl:max-w-[1360px] 2xl:h-[60px] 2xl:mx-auto  mobile:px-4 mobile:py-6 mobile:h-[40px] flex justify-between items-center">
         <Image
           className="mobile:max-w-[94px] md:max-w-[100px]"
           src="/images/logo_test.svg"

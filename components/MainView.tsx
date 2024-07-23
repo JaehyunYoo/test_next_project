@@ -4,7 +4,14 @@ import MainContentView from "./MainContentView";
 
 const MainView = () => {
   return (
-    <section className="font-spoqaHangSans w-full h-screen flex flex-col items-center justify-center">
+    <section
+      className="font-spoqaHangSans w-full h-screen flex flex-col items-center justify-center"
+      data-aos="fade-in"
+      data-aos-easing="ease-out"
+      data-aos-duration="500"
+      data-aos-once="true"
+      data-aos-delay="300"
+    >
       <div className="flex mobile:flex-col md:flex-row-reverse items-center justify-center">
         {/* Main Image*/}
         <Image

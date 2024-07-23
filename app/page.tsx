@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import MainView from "@/components/MainView";
@@ -8,9 +8,15 @@ import SectionContents from "@/components/SectionContents";
 import StoreTitle from "@/components/StoreTitle";
 import { StoreButton } from "@/components/StoreButton";
 import Link from "next/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
   const [isActive, setActive] = useState<boolean>(false);
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       {/* <Header /> */}
@@ -27,6 +33,7 @@ export default function Home() {
           path={"/images/calendar_section.svg"}
           width={600}
           height={504}
+          animation="fade-right"
           style="font-spoqaHangSans flex mobile:flex-col md:flex-row mobile:justify-center items-center"
           imageStyle={
             "md:w-[504px] md:h-[504px] mobile:h-[260px] mobile:mr-[48px]"
@@ -60,6 +67,7 @@ export default function Home() {
         {/* Section Content 02*/}
         <SectionContents
           path={"/images/period_calendar_section.svg"}
+          animation="fade-left"
           width={668}
           height={504}
           style="font-spoqaHangSan flex mobile:flex-col md:flex-row-reverse mobile:justify-center  mobile:items-center"
