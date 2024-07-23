@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import Header from "@/components/Header";
 import MainView from "@/components/MainView";
@@ -8,10 +10,11 @@ import { StoreButton } from "@/components/StoreButton";
 import Link from "next/link";
 
 export default function Home() {
+  const [isActive, setActive] = useState<boolean>(false);
   return (
     <>
       {/* <Header /> */}
-      <Header />
+      <Header isActive={isActive} onToggle={setActive} />
       <main className="overflow-x-hidden bg-[#fcf4e8]">
         {/* ViewMain */}
         <MainView />

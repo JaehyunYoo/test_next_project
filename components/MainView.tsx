@@ -8,7 +8,7 @@ const MainView = () => {
       <div className="flex mobile:flex-col md:flex-row-reverse items-center justify-center">
         {/* Main Image*/}
         <Image
-          className="mobile:max-w-[356px] md:max-w-[385px] md:ml-6 xl:max-w-[756px] xl:ml-24"
+          className="mobile:max-w-[326px] md:max-w-[385px] md:ml-6 xl:max-w-[756px] xl:ml-24"
           src="/images/main_title_2x.png"
           width={756}
           height={750}
@@ -17,7 +17,7 @@ const MainView = () => {
         <MainContentView />
       </div>
       <Image
-        className="mt-4"
+        className="mt-4 mb-4"
         src="/icons/bottom_arrow.svg"
         width={36}
         height={36}

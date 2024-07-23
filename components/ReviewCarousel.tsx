@@ -2,6 +2,7 @@
 
 import React, { ReactNode } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 // Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,8 +18,10 @@ const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
       <Swiper
         centeredSlides={true}
         initialSlide={3}
+        loop={true}
+        modules={[Autoplay]}
         autoplay={{
-          delay: 2500,
+          delay: 1000,
           disableOnInteraction: false,
         }}
         breakpoints={{
