@@ -4,8 +4,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full bg-white">
-      <nav className="max-w-[1360px] mx-auto flex justify-between items-center px-8 py-4">
+    <div className="w-full bg-white relative">
+      <nav className="absoulte max-w-[1360px] mx-auto flex justify-between items-center px-8 py-4">
         <Image
           className="mobile:max-w-[94px]"
           src="/images/logo_test.svg"

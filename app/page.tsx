@@ -21,133 +21,141 @@ export default function Home() {
         {/* Section Content 01*/}
         <div className="mobile:mt-[210px]" />
         <SectionContents
-          path={"/images/couple_calendar.svg"}
+          path={"/images/calendar_section.svg"}
           width={624}
           height={504}
-          style="font-spoqaHangSans flex mobile:flex-col mobile:justify-center mobile:items-center"
-          imageStyle={"mobile:w-[323px] mobile:mr-[50px]"}
+          style="font-spoqaHangSans flex mobile:flex-col md:flex-row mobile:justify-center mobile:items-center"
+          imageStyle={"mobile:w-[323px] mobile:mr-[50px] "}
           alt={""}
         >
-          <div className="mt-[32px] flex mobile:mt-[32px] justify-center items-center">
-            <span>
-              <Image
-                src="/icons/calender_icon.svg"
-                width={26}
-                height={26}
-                alt=""
-              />
+          <div>
+            <div className="flex md:justify-start mobile:justify-center items-center mobile:mt-[32px] md:mt-0">
+              <span>
+                <Image
+                  src="/icons/calender_icon.svg"
+                  width={26}
+                  height={26}
+                  alt=""
+                />
+              </span>
+              <span className="block ml-[8px] text-orange-500 font-bold mobile:text-[22px]">
+                공유 캘린더
+              </span>
+            </div>
+            <span className="block my-[12px] text-neutral-700 font-bold mobile:text-[32px] ">
+              커플 일정 공유
             </span>
-            <span className="ml-[8px] text-orange-500 font-bold mobile:text-[22px]">
-              공유 캘린더
-            </span>
+            <p className="mx-auto text-neutral-700 mobile:text-lg font-bold md:text-left mobile:text-center">
+              서로의 일정을 실시간으로
+              <br /> 확인하고 공유하세요.
+            </p>
           </div>
-          <span className="my-[12px] text-neutral-700 font-bold text-center mobile:text-[32px]">
-            커플 일정 공유
-          </span>
-          <p className="mx-auto text-center text-neutral-700 mobile:text-lg font-bold">
-            서로의 일정을 실시간으로
-            <br /> 확인하고 공유하세요.
-          </p>
         </SectionContents>
-        <div className="py-[20px]" />
+        <div className="mobile:py-[20px] md:py-[50px]" />
         {/* Section Content 02*/}
         <SectionContents
-          path={"/images/period_calendar_status.svg"}
+          path={"/images/period_calendar_section.svg"}
           width={668}
           height={504}
-          style="font-spoqaHangSan flex mobile:flex-col mobile:justify-center mobile:items-center"
-          imageStyle={"mobile:w-[350px] py-[12px]"}
+          style="font-spoqaHangSan flex mobile:flex-col md:flex-row-reverse mobile:justify-center  mobile:items-center"
+          imageStyle={"mobile:w-[350px]  py-[12px] md:ml-[48px]"}
           alt={""}
         >
-          <div className="mt-[32px] flex justify-center items-center">
-            <span>
-              <Image
-                src="/icons/person_icon.svg"
-                width={26}
-                height={26}
-                alt=""
-              />
+          <div>
+            <div className="mt-[32px] flex md:justify-start  justify-center items-center">
+              <span>
+                <Image
+                  src="/icons/person_icon.svg"
+                  width={26}
+                  height={26}
+                  alt=""
+                />
+              </span>
+              <span className="ml-[8px] text-pink-400 mobile:text-[22px] font-bold">
+                상태 설정
+              </span>
+            </div>
+            <span className="block my-[12px] mobile:mx-auto text-neutral-700 font-bold  md:text-left  mobile:text-center mobile:text-[32px]  mobile:max-w-[200px]">
+              월경 캘린더 & 나의 상태 공유
             </span>
-            <span className="ml-[8px] text-pink-400 mobile:text-[22px] font-bold">
-              상태 설정
-            </span>
+            <p className="mb-[12px] font-spoqaHangSans md:text-left mobile:text-center text-[#3d3d3d] font-bold  md:max-w-[163px] mobile:text-lg">
+              월경 주기를 추적하고 상대방과 공유하세요.
+            </p>
           </div>
-          <span className="my-[12px] text-neutral-700 font-bold text-center mobile:text-[32px] mobile:max-w-[200px]">
-            월경 캘린더 & 나의 상태 공유
-          </span>
-          <p className="mb-[12px] font-spoqaHangSans text-center text-[#3d3d3d] font-bold mobile:text-lg">
-            월경 주기를 추적하고 상대방과 공유하세요.
-          </p>
         </SectionContents>
-        <div className="py-[20px]" />
+        <div className="mobile:py-[20px] md:py-[50px]" />
         {/* Section Content 03*/}
         <SectionContents
-          path={"/images/widget.svg"}
+          path={"/images/widget_section.svg"}
           width={500}
           height={500}
-          style="font-spoqaHangSan flex mobile:flex-col mobile:justify-center mobile:items-center"
-          imageStyle={"mobile:w-[340px] py-[12px]"}
+          style="font-spoqaHangSan flex mobile:flex-col md:flex-row mobile:justify-center mobile:items-center"
+          imageStyle={"mobile:w-[340px] py-[12px] md:mr-[48px]"}
           alt={""}
         >
-          <div className="mt-[32px] flex justify-center items-center">
-            <span>
-              <Image
-                src="/icons/share_icon.svg"
-                width={26}
-                height={26}
-                alt=""
-              />
+          <div>
+            <div className="mt-[32px] flex md:justify-start  justify-center items-center">
+              <span>
+                <Image
+                  src="/icons/share_icon.svg"
+                  width={26}
+                  height={26}
+                  alt=""
+                />
+              </span>
+              <span className="block ml-[8px] text-amber-500 font-bold mobile:text-[22px]">
+                공유 위젯
+              </span>
+            </div>
+            <span className="block py-[12px] text-neutral-700 font-bold md:text-left text-center mobile:text-[32px]">
+              캘린더 위젯
             </span>
-            <span className="ml-[8px] text-amber-500 font-bold mobile:text-[22px]">
-              공유 위젯
-            </span>
+            <p className="mb-[12px] md:text-left text-center text-neutral-700 font-bold mobile:text-lg">
+              언제 어디서든 일정을 확인 할 수 있게
+              <br />
+              커플 캘린더 위젯을 제공해요.
+            </p>
           </div>
-          <span className="py-[12px] text-neutral-700 font-bold text-center mobile:text-[32px]">
-            캘린더 위젯
-          </span>
-          <p className="mb-[12px] text-center text-neutral-700 font-bold mobile:text-lg">
-            언제 어디서든 일정을 확인 할 수 있게
-            <br />
-            커플 캘린더 위젯을 제공해요.
-          </p>
         </SectionContents>
-        <div className="py-[20px]" />
+        <div className="py-[20px] py-[50px]" />
         {/* Section Content 04*/}
         <SectionContents
-          path={"/images/couple_share.svg"}
+          path={"/images/couple_share_section.svg"}
           width={612}
           height={504}
-          style="font-spoqaHangSan flex mobile:flex-col mobile:justify-center mobile:items-center"
+          style="font-spoqaHangSan flex md:flex-row-reverse mobile:flex-col mobile:justify-center mobile:items-center"
           imageStyle={"mobile:w-[350px] py-[12px]"}
           alt={""}
         >
-          <div className="mt-[32px] flex justify-center items-center">
-            <span>
-              <Image
-                src="/icons/chat_bubble.svg"
-                width={26}
-                height={26}
-                alt=""
-              />
-            </span>
-            <span className="ml-[4px] text-emerald-500  font-bold mobile:text-[22px]">
-              연인과의 대화
-            </span>
+          <div>
+            <div className="mt-[32px] flex md:justify-start justify-center items-center">
+              <span>
+                <Image
+                  src="/icons/chat_bubble.svg"
+                  width={26}
+                  height={26}
+                  alt=""
+                />
+              </span>
+              <p className="ml-[4px] text-emerald-500  font-bold mobile:text-[22px]">
+                연인과의 대화
+              </p>
+            </div>
+            <p className="my-[12px] text-neutral-700 font-bold md:text-left text-center mobile:text-[32px] ">
+              채팅 및 메모 기능
+            </p>
+            <p className="mb-[12px] md:text-left text-center text-neutral-700 font-bold mobile:text-lg">
+              일정과 관련된 한줄 메모를 남기고
+              <br />
+              실시간 채팅으로 소통하세요.
+            </p>
           </div>
-          <span className="my-[12px] text-neutral-700 font-bold text-center mobile:text-[32px] ">
-            채팅 및 메모 기능
-          </span>
-          <p className="mb-[12px] text-center text-neutral-700 font-bold mobile:text-lg">
-            일정과 관련된 한줄 메모를 남기고
-            <br />
-            실시간 채팅으로 소통하세요.
-          </p>
         </SectionContents>
         <div className="py-[20px]" />
         <div className="py-[40px]" />
         <div className="flex justify-center items-center">
           <Image
-            className="max-w-[800px] mx-auto"
+            className="md:max-w-[1114px] max-w-[800px] mx-auto"
             src="/images/bottom_app_screen.svg"
             width={1280}
             height={508}
@@ -182,11 +190,11 @@ export default function Home() {
         </div>
         <div className="py-[60px]" />
       </main>
-      <footer className="bg-black flex flex-col justify-center items-center">
+      <footer className="bg-black w-full flex flex-col px-[16px] justify-center">
         {/*footer nav link*/}
-        <div className="pt-4 flex justify-start items-center">
+        <div className="pt-4 flex justify-start b">
           {/*link*/}
-          <div className="font-spoqaHangSans mobile:py-[12px] mobile:px-[16px]">
+          <div className="font-spoqaHangSans">
             <Link
               href="/"
               className="pr-[26px] text-white text-base font-medium"
@@ -210,7 +218,7 @@ export default function Home() {
           <div className="text-white">Icon</div>
         </div>
         {/* footer address info */}
-        <div className="pt-8 font-spoqaHangSans mobile:py-[12px] mobile:px-[16px]">
+        <div className="pt-8 font-spoqaHangSans">
           <p className="mb-1 text-white font-medium mobile:text-sm">베스펙스</p>
           <p className="mb-1 text-white font-medium mobile:text-sm">
             사업자번호 : 626-81-02814 대표 : 손미진
