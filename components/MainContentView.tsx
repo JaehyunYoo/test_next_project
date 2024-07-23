@@ -8,7 +8,7 @@ const MainContentView = () => {
     <div className="md: font-spoqaHangSans flex flex-col items-center justify-center">
       <div className="flex flex-col items-center justify-center">
         <Image
-          className="mb-[4px] mobile:max-w-[140px]"
+          className="mb-[4px] md:max-w-[230px] mobile:max-w-[140px]"
           src="/icons/title_dot.svg"
           width={262}
           height={15}

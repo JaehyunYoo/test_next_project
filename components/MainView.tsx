@@ -9,7 +9,7 @@ const MainView = () => {
       <div className="flex mobile:flex-col md:flex-row-reverse items-center justify-center">
         {/* Main Image*/}
         <Image
-          className="mobile:max-w-[356px] md:max-w-[385px] md:ml-4"
+          className="mobile:max-w-[356px] md:max-w-[385px] md:ml-6"
           src="/images/main_title_2x.png"
           width={756}
           height={750}
