@@ -7,12 +7,13 @@ const Header = () => {
     <div className="w-full bg-white">
       <nav className="max-w-[1360px] mx-auto flex justify-between items-center px-8 py-4">
         <Image
+          className="mobile:max-w-[94px]"
           src="/images/logo_test.svg"
           width={160}
           height={42}
           alt="Picture of the author"
         />
-        <div className="font-spoqaHangSans">
+        <div className="font-spoqaHangSans mobile:hidden">
           <Link href="/" className="pr-[32px] py-[16px]">
             <span className="text-black text-base font-medium  font-medium">
               About Us

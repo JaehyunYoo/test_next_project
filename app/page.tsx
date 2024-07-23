@@ -12,7 +12,7 @@ export default function Home() {
     <>
       {/* <Header /> */}
       <Header />
-      <main className="overflow-x-hidden">
+      <main className="overflow-x-hidden bg-[#fcf4e8]">
         {/* ViewMain */}
         <MainView />
 
