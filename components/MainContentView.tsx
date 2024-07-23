@@ -14,10 +14,10 @@ const MainContentView = () => {
           height={15}
           alt="Picture of the author"
         />
-        <h1 className="text-center text-zinc-800 mobile:text-2xl font-bold">
+        <h1 className="text-center text-zinc-800 md:text-4xl mobile:text-2xl   font-bold">
           커플 일정 관리
         </h1>
-        <h2 className="text-center text-zinc-800 mobile:text-[28px] font-bold">
+        <h2 className="text-center text-zinc-800 md:text-4xl mobile:text-[28px] font-bold">
           <span className="text-orange-500  font-bold">시그널링</span>
           으로
         </h2>
