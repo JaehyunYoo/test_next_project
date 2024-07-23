@@ -5,11 +5,11 @@ import Reviews from "./Reviews";
 
 const MainView = () => {
   return (
-    <section className="font-spoqaHangSans w-full h-screen flex flex-col items-center justify-center">
+    <section className="font-spoqaHangSans w-full h-dvh flex flex-col items-center justify-center">
       <div className="flex mobile:flex-col md:flex-row-reverse items-center justify-center">
         {/* Main Image*/}
         <Image
-          className="mobile:max-w-[356px] md:max-w-[385px] md:ml-6"
+          className="mobile:max-w-[356px] md:max-w-[385px] md:ml-6 xl:max-w-[756px] xl:ml-24"
           src="/images/main_title_2x.png"
           width={756}
           height={750}

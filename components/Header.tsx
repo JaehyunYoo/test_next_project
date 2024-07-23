@@ -4,16 +4,16 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full bg-white relative">
-      <nav className="absoulte max-w-[1360px] mx-auto flex justify-between items-center px-8 py-4">
+    <nav className="absoulte w-full bg-white">
+      <div className="xl:max-w-[1360px] xl:h-[60px] mx-auto flex justify-between items-center">
         <Image
-          className="mobile:max-w-[94px]"
+          className="mobile:max-w-[94px] md:max-w-[142px]"
           src="/images/logo_test.svg"
           width={160}
-          height={42}
+          height={30}
           alt="Picture of the author"
         />
-        <div className="font-spoqaHangSans mobile:hidden">
+        <div className="font-spoqaHangSans md:block mobile:hidden">
           <Link href="/" className="pr-[32px] py-[16px]">
             <span className="text-black text-base font-medium  font-medium">
               About Us
@@ -35,8 +35,8 @@ const Header = () => {
             </span>
           </Link>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 };
 
