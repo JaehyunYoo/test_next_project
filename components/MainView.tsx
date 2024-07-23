@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import MainContentView from "./MainContentView";
-import Reviews from "./Reviews";
 
 const MainView = () => {
   return (
-    <section className="font-spoqaHangSans w-full h-dvh flex flex-col items-center justify-center">
+    <section className="font-spoqaHangSans w-full h-screen flex flex-col items-center justify-center">
       <div className="flex mobile:flex-col md:flex-row-reverse items-center justify-center">
         {/* Main Image*/}
         <Image
