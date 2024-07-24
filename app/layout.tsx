@@ -74,12 +74,11 @@ export const metadata: Metadata = {
     type: "website",
     url: `${siteUrl}`,
     title: "시그널링: 커플을 위한 최고의 일정 관리 앱",
-    description:
-      "실시간 일정 공유, 상태 공유, 월경 캘린더 등 다양한 기능. 앱스토어 4.9점 평가. 지금 다운로드하세요!",
-    siteName: "Signaling",
+    description: "연인과 일정 공유, 메시지를 한 번에! 커플 필수 앱!",
+    siteName: "시그널링",
     images: [
       {
-        url: `${siteUrl}/images/OG_img.png`,
+        url: `${siteUrl}/images/og_image.png`,
         width: 1200,
         height: 630,
       },

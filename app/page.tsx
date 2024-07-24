@@ -67,7 +67,7 @@ export default function Home() {
             </span>
             <p className="mx-auto text-neutral-700 mobile:text-lg font-bold md:text-left mobile:text-center">
               서로의 일정을 실시간으로
-              <br /> 확인하고 공유하세요.
+              <br /> 확인하고 공유 해요.
             </p>
           </div>
         </SectionContents>
@@ -99,8 +99,9 @@ export default function Home() {
             <span className="block my-[12px] mobile:mx-auto text-neutral-700 font-bold  md:text-left  mobile:text-center mobile:text-[32px]  mobile:max-w-[200px]">
               월경 캘린더 & 나의 상태 공유
             </span>
-            <p className="mb-[12px] font-spoqaHangSans md:text-left mobile:text-center text-[#3d3d3d] font-bold  md:max-w-[163px] mobile:text-lg">
-              월경 주기를 추적하고 상대방과 공유하세요.
+            <p className="mb-[12px] font-spoqaHangSans md:text-left mobile:text-center text-[#3d3d3d] font-bold  mobile:text-lg">
+              월경 주기를 기록하고 <br />
+              현재 상태를 상대방과 공유해요.
             </p>
           </div>
         </SectionContents>
@@ -127,7 +128,7 @@ export default function Home() {
                 />
               </span>
               <span className="block ml-[8px] text-amber-500 font-bold mobile:text-[22px]">
-                공유 위젯
+                홈 화면 위젯
               </span>
             </div>
             <span className="block py-[12px] text-neutral-700 font-bold md:text-left text-center mobile:text-[32px]">
@@ -170,7 +171,7 @@ export default function Home() {
             <p className="mb-[12px] md:text-left text-center text-neutral-700 font-bold mobile:text-lg">
               일정과 관련된 한줄 메모를 남기고
               <br />
-              실시간 채팅으로 소통하세요.
+              실시간 채팅으로 소통해요.
             </p>
           </div>
         </SectionContents>
@@ -209,13 +210,13 @@ export default function Home() {
             <StoreButton
               title="App Store"
               icon="/icons/apple_store_btn.svg"
-              link="https://apps.apple.com/kr/app/id6474220479"
+              link="https://signaling.app.link/ZGtOHZvUtLb"
             />
             <div className="mx-1" />
             <StoreButton
               title="Google Play"
               icon="/icons/play_store.svg"
-              link="https://play.google.com/store/apps/details?id=com.vespexx.signal&hl=ko"
+              link="https://signaling.app.link/3zcx85FUtLb"
             />
           </div>
         </div>

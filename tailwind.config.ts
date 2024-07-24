@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        mobile: "360px",
+        mobile: "340px",
         notebook: "1440px",
       },
       fontFamily: {

@@ -50,19 +50,19 @@ const MainView = () => {
             <StoreButton
               title="App Store"
               icon="/icons/apple_store_btn.svg"
-              link="https://apps.apple.com/kr/app/id6474220479"
+              link="https://signaling.app.link/ZGtOHZvUtLb"
             />
             <div className="mx-1" />
             <StoreButton
               title="Google Play"
               icon="/icons/play_store.svg"
-              link="https://play.google.com/store/apps/details?id=com.vespexx.signal"
+              link="https://signaling.app.link/3zcx85FUtLb"
             />
           </div>
         </div>
       </div>
       <Image
-        className="mt-4 mb-4"
+        className="mt-4 pb-6"
         src="/icons/bottom_arrow.svg"
         width={36}
         height={36}

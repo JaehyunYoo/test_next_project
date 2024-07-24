@@ -42,22 +42,24 @@ const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
           },
 
           1024: {
+            initialSlide: 2,
             slidesPerView: 3.5,
             spaceBetween: 10,
           },
           1280: {
+            initialSlide: 3,
             slidesPerView: 4.5,
             spaceBetween: 10,
           },
           1440: {
             initialSlide: 3,
-            slidesPerView: 5,
+            slidesPerView: 4.5,
             spaceBetween: 10,
           },
           1920: {
             initialSlide: 4,
             slidesPerView: 6.5,
-            spaceBetween: 30,
+            spaceBetween: 10,
           },
         }}
       >

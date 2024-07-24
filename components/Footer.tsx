@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 import { ArrowUp } from "lucide-react";
 import Gap from "./Gap";
 
@@ -15,7 +16,9 @@ const Footer: React.FC<ScrollToTopProps> = ({ onTopScroll }) => {
         <div className="font-spoqaHangSans flex justify-between items-center">
           <div>
             <Link
-              href="/"
+              href="https://www.vespexx.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="pr-[26px] text-white text-base font-medium"
             >
               About Us
@@ -37,9 +40,53 @@ const Footer: React.FC<ScrollToTopProps> = ({ onTopScroll }) => {
               Contact us
             </Link>
           </div>
-          <button type="button" onClick={onTopScroll}>
-            <ArrowUp color="#fff" />
-          </button>
+          {/* 소셜미디어 링크 */}
+          <div className="flex">
+            <div className="sm:flex sm:items-center sm:block mobile:hidden">
+              <Link
+                href="https://www.instagram.com/signaling.couple/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/icons/instagram.svg"
+                  width={24}
+                  height={24}
+                  alt="instagram icon"
+                />
+              </Link>
+              <Link
+                href="https://www.tiktok.com/@signaling.couple"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8"
+              >
+                <Image
+                  src="/icons/ticktalk.svg"
+                  width={24}
+                  height={24}
+                  alt="ticktok icon"
+                />
+              </Link>
+              <Link
+                href="https://www.youtube.com/@signaling.couple"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pr-8"
+              >
+                <Image
+                  src="/icons/youtube.svg"
+                  width={24}
+                  height={24}
+                  alt="youtube icon"
+                />
+              </Link>
+            </div>
+
+            <button type="button" onClick={onTopScroll}>
+              <ArrowUp color="#fff" />
+            </button>
+          </div>
         </div>
         {/*footer description*/}
         <div>
@@ -55,16 +102,61 @@ const Footer: React.FC<ScrollToTopProps> = ({ onTopScroll }) => {
           <Gap size="py-4" />
           <div className="flex">
             <Link
-              href="/"
+              href="https://vespexx.oopy.io/terms"
+              target="_blank"
+              rel="noopener noreferrer"
               className="pr-[20px] text-white text-base font-medium  text-sm"
             >
               서비스 이용약관
             </Link>
             <Link
-              href="/"
+              href="https://vespexx.oopy.io/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white text-base font-medium  text-sm"
             >
               개인정보 처리방침
+            </Link>
+          </div>
+          {/*모바일 환경 소셜 링크 */}
+          <Gap size="py-4 sm:hidden mobile:block" />
+          <div className="sm:hidden mobile:block mobile:flex mobile:justify-center">
+            <Link
+              href="https://www.instagram.com/signaling.couple/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/icons/instagram.svg"
+                width={24}
+                height={24}
+                alt="instagram icon"
+              />
+            </Link>
+            <Link
+              href="https://www.tiktok.com/@signaling.couple"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8"
+            >
+              <Image
+                src="/icons/ticktalk.svg"
+                width={24}
+                height={24}
+                alt="ticktok icon"
+              />
+            </Link>
+            <Link
+              href="https://www.youtube.com/@signaling.couple"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/icons/youtube.svg"
+                width={24}
+                height={24}
+                alt="youtube icon"
+              />
             </Link>
           </div>
         </div>
