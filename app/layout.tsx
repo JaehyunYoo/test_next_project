@@ -1,10 +1,8 @@
 import { spoqaHangSans } from "@/core/utils/fontutils";
 import "./globals.css";
-
 import { Metadata } from "next";
-import Head from "next/head";
 
-const siteUrl = "http://localhost:3000";
+const siteUrl = "https://signalingtest.vercel.app";
 
 export const metadata: Metadata = {
   icons: [
@@ -74,14 +72,16 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    url: "signaling-app.com",
+    url: `${siteUrl}`,
     title: "시그널링: 커플을 위한 최고의 일정 관리 앱",
     description:
       "실시간 일정 공유, 상태 공유, 월경 캘린더 등 다양한 기능. 앱스토어 4.9점 평가. 지금 다운로드하세요!",
     siteName: "Signaling",
     images: [
       {
-        url: "https://example.com/og.png",
+        url: `${siteUrl}/images/OG_img.png`,
+        width: 1200,
+        height: 630,
       },
     ],
   },
@@ -94,77 +94,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link
-          rel="apple-touch-icon"
-          sizes="57x57"
-          href="/etc/apple-icon-57x57.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="60x60"
-          href="/etc/apple-icon-60x60.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="72x72"
-          href="/etc/apple-icon-72x72.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="76x76"
-          href="/etc/apple-icon-76x76.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="114x114"
-          href="/etc/apple-icon-114x114.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="120x120"
-          href="/etc/apple-icon-120x120.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="144x144"
-          href="/etc/apple-icon-144x144.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="152x152"
-          href="/etc/apple-icon-152x152.png"
-        />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/etc/apple-icon-180x180.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/etc/favicon-32x32.png"
-          sizes="32x32"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/etc/android-icon-192x192.png"
-          sizes="192x192"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-96x96.png"
-          sizes="96x96"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/favicon-16x16.png"
-          sizes="16x16"
-        />
-      </Head>
       <body className={`${spoqaHangSans.variable} font-spoqaHangSans`}>
         {children}
       </body>
