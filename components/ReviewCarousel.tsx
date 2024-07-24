@@ -12,9 +12,7 @@ interface SliderProps {
   slides: ReactNode[];
 }
 
-const ReviewCarousel: React.FC<SliderProps> = ({
-  slides,
-}) => {
+const ReviewCarousel: React.FC<SliderProps> = ({ slides }) => {
   return (
     <>
       <Swiper
@@ -28,28 +26,32 @@ const ReviewCarousel: React.FC<SliderProps> = ({
         }}
         breakpoints={{
           360: {
+            initialSlide: 3,
             spaceBetween: 10,
-            slidesPerView: 2,
+            slidesPerView: 1.5,
           },
           640: {
+            initialSlide: 3,
             slidesPerView: 2.5,
             spaceBetween: 10,
           },
           768: {
-            slidesPerView: 2.5,
+            initialSlide: 3,
+            slidesPerView: 3,
             spaceBetween: 10,
           },
+
           1024: {
             slidesPerView: 3.5,
             spaceBetween: 10,
           },
           1280: {
-            slidesPerView: 3.5,
+            slidesPerView: 4.5,
             spaceBetween: 10,
           },
           1440: {
             initialSlide: 3,
-            slidesPerView: 4,
+            slidesPerView: 5,
             spaceBetween: 10,
           },
           1920: {
