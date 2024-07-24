@@ -10,7 +10,7 @@ interface ScrollToTopProps {
 
 const Footer: React.FC<ScrollToTopProps> = ({ onTopScroll }) => {
   return (
-    <footer className="bg-black w-full">
+    <footer className="bg-[#36312b] w-full">
       <div className="mx-auto 2xl:max-w-[1440px] p-8">
         {/*footer nav link*/}
         <div className="font-spoqaHangSans flex justify-between items-center">
