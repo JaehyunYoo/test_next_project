@@ -30,7 +30,7 @@ const Header: React.FC<MenuProps> = ({ isActive, onToggle }) => {
 
         <div className="font-spoqaHangSans md:block sm:hidden mobile:hidden">
           <Link
-            href="https://play.google.com/store/apps/details?id=com.vespexx.signal"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="pr-8 py-4"
