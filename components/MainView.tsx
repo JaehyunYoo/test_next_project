@@ -62,7 +62,7 @@ const MainView = () => {
         </div>
       </div>
       <Image
-        className="mt-4 md:py-0 mobile:pb-4"
+        className="mt-4"
         src="/icons/bottom_arrow.svg"
         width={36}
         height={36}
